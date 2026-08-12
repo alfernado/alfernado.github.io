@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Al Fernando — Personal Site</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <meta name="description" content="Al Fernando — developer, designer, whatever short tagline you want.">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="site-title">Al Fernando</h1>
+      <nav class="site-nav" aria-label="Primary">
+        <a class="nav-link" href="https://github.com/alfernado" target="_blank" rel="noopener">GitHub</a>
+        <a class="nav-link" href="https://www.linkedin.com/in/your-profile" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="nav-link" href="/resume.pdf" target="_blank" rel="noopener">Resume</a>
+        <a class="nav-link" href="/blog">Blog</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h2 class="hero-title">Hello — I’m Al.</h2>
+      <p class="hero-sub">Developer &amp; designer focused on clean web experiences. I build things that scale and look great.</p>
+      <p class="hero-cta">
+        <a class="btn primary" href="mailto:alfiecatlow123@gmail.com">Contact</a>
+        <a class="btn outline" href="#work">See work</a>
+      </p>
+    </section>
+
+    <section id="work" class="cards">
+      <article class="card">
+        <h3>Project One</h3>
+        <p>Short description of a project. <a href="https://example.com/project-one" target="_blank" rel="noopener">View →</a></p>
+      </article>
+
+      <article class="card">
+        <h3>Project Two</h3>
+        <p>Short description. <a href="https://example.com/project-two" target="_blank" rel="noopener">View →</a></p>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Al Fernando · <a href="https://github.com/alfernado/alfernado.github.io" target="_blank" rel="noopener">Source</a></p>
+    </div>
+  </footer>
+
+  <script>
+    // small nicety: update year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
