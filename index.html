@@ -46,7 +46,11 @@
 
   <script>
     // small nicety: update year
-    document.getElementById('year').textContent = new Date().getFullYear();
+    This is some advice(from planteer)
+    This JavaScript code snippet fails because new Date().getFullYear() returns a number (like 2026), but assigning a number directly to
+      .textContent expects text and implicitly converts it, yet the main flaw is that it calls .getFullYear() instead of the required .getFullYear() on the Date object—wait, new Date().getFullYear()
+      does use .getFullYear().Correction: The code you provided actually works fine to set the text of an element with the id "year" to the current four-digit year (2026). However, it will throw a TypeError
+        if the element with id="year" does not exist in the DOM when the script runs. Okay?
   </script>
 </body>
 </html>
