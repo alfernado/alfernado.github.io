@@ -1,11 +1,11 @@
 :root{
-  --bg-start: #f0fbf3;
-  --bg-end:   #e6f8ea;
-  --card: #ffffff;
-  --muted: #5f7f64;       /* softer green for secondary text */
-  --accent: #6fcf8f;      /* primary button color */
-  --accent-2: #b7f1d0;    /* secondary accent for gradients */
-  --text: #0b2b1a;        /* dark green for main text */
+  --bg-start: #e6f7ee; /* slightly deeper pastel base */
+  --bg-end:   #d0f0dd; /* deeper end to give more green */
+  --card: #f7fff9;
+  --muted: #355f46;       /* darker muted green */
+  --accent: #2f8f4a;      /* darker primary button color */
+  --accent-2: #1f6b36;    /* deeper accent for gradients */
+  --text: #042614;        /* very dark green for main text */
   --radius: 12px;
   --max-width: 980px;
   --glass: rgba(255,255,255,0.6);
@@ -33,7 +33,7 @@ body{
 .site-header{
   background: transparent;
   backdrop-filter: blur(4px);
-  border-bottom: 1px solid rgba(11,43,26,0.06);
+  border-bottom: 1px solid rgba(4,38,20,0.08);
 }
 .header-inner{
   display:flex;
@@ -57,7 +57,7 @@ body{
   font-size:0.95rem;
 }
 .nav-link:hover{
-  background: rgba(11,43,26,0.04);
+  background: rgba(4,38,20,0.06);
 }
 
 /* Hero */
@@ -84,16 +84,16 @@ body{
 .btn:active{transform:translateY(1px)}
 .btn.primary{
   background:linear-gradient(90deg,var(--accent),var(--accent-2));
-  color:var(--text);
-  box-shadow:0 10px 30px rgba(111,207,143,0.12);
+  color:var(--card);
+  box-shadow:0 12px 36px rgba(47,143,74,0.14);
 }
-.btn.primary:hover{opacity:0.98;box-shadow:0 12px 36px rgba(111,207,143,0.14)}
+.btn.primary:hover{opacity:0.98;box-shadow:0 14px 44px rgba(31,107,54,0.16)}
 .btn.outline{
-  border:1px solid rgba(11,43,26,0.06);
+  border:1px solid rgba(4,38,20,0.08);
   color:var(--text);
   background:transparent;
 }
-.btn.outline:hover{background:rgba(11,43,26,0.02)}
+.btn.outline:hover{background:rgba(4,38,20,0.03)}
 
 /* Cards / work */
 .cards{
@@ -106,8 +106,8 @@ body{
   background:var(--card);
   border-radius:var(--radius);
   padding:20px;
-  box-shadow:0 8px 30px rgba(8,32,18,0.04);
-  border:1px solid rgba(11,43,26,0.04);
+  box-shadow:0 10px 36px rgba(4,38,20,0.06);
+  border:1px solid rgba(4,38,20,0.06);
 }
 .card h3{margin:0 0 8px 0;font-size:1.05rem}
 .card p{margin:0;color:var(--muted);line-height:1.45}
@@ -116,7 +116,7 @@ body{
 
 /* Footer */
 .site-footer{
-  border-top:1px solid rgba(11,43,26,0.03);
+  border-top:1px solid rgba(4,38,20,0.04);
   margin-top:48px;
   padding:18px 0;
   color:var(--muted);
